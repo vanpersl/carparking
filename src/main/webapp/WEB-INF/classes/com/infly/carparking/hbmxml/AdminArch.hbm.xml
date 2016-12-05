@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cp.data.bean">
+	<class name="AdminArchBean" table="admin_arch">
+		<id name="id" type="int">
+			<generator class="native" />
+		</id>
+		<property name="adminArchName" column="admin_Arch_Name" />
+		<property name="adminArchLt" column="admin_Arch_Lt" />
+		<property name="adminArchOt" column="admin_Arch_Ot" />
+		<property name="adminArchNo" column="admin_Arch_No" />
+		<property name="adminArchFee" column="admin_Arch_Totalcash" />
+		<property name="adminArchCpaname" column="admin_Arch_Cpaname" />
+		<property name="adminArchWorktime" column="admin_Arch_Worktime" />
+	</class>
+</hibernate-mapping>

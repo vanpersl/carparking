@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.multipart.maxSize" value="1048576000" />
+	<package name="repLost" extends="struts-default" namespace="">
+		<action name="RepLost" class="com.infly.carparking.action.ReportLostAction">
+			<result name="success">/oreplose.jsp</result>
+		</action>
+		<action name="upload" class="com.infly.carparking.action.UploadAction">
+			<result name="success">/upload/success.jsp</result>
+		</action>
+	</package>
+	<package name="checklogin" extends="struts-default" namespace="">
+		<!-- 登录 -->
+		<action name="Login" class="com.infly.carparking.action.LoginAction">
+			<result name="optsuc">/omanageeo.jsp</result>
+			<result name="admsuc">/amngcpa.jsp</result>
+			<result name="loginedopt">/invalidopt.jsp</result>
+			<result name="logined">/invalid.jsp</result>
+			<result name="failure">/admlog.jsp</result>
+		</action>
+		<action name="UserLogin" class="com.infly.carparking.action.UserLoginAction">
+			<result name="success">/ubis.jsp</result>
+			<result name="error">/ulogin.jsp</result>
+		</action>
+		<action name="UserChp" class="com.infly.carparking.action.ChangePswAction">
+			<result name="success">/ubis.jsp</result>
+		</action>
+	</package>
+	<package name="checklogout" extends="struts-default" namespace="">
+		<action name="Logout" class="com.infly.carparking.action.LogoutAction">
+			<result name="success">/admlog.jsp</result>
+		</action>
+		<action name="LogoutAdm" class="com.infly.carparking.action.LogoutAdmAction">
+			<result name="success">/admlog.jsp</result>
+		</action>
+	</package>
+	<package name="carEnterCpa" extends="struts-default" namespace="">
+		<action name="CarEnter" class="com.infly.carparking.action.CarEnterAction">
+			<result name="success">/omanageeo.jsp</result>
+			<result name="failure">/admlog.jsp</result>
+		</action>
+	</package>
+	<package name="cpaEnterPage" extends="struts-default"
+		namespace="">
+		<action name="EnterPage" class="com.infly.carparking.action.PageAction">
+			<result>/omanageeo.jsp</result>
+			<result name="failure">/admlog.jsp</result>
+		</action>
+	</package>
+
+	<package name="cpaRecordPage" extends="struts-default"
+		namespace="">
+		<action name="RecordPage" class="com.infly.carparking.action.ShowRecordAction">
+			<result name="success">/acparecord.jsp</result>
+			<result name="failure">/admlog.jsp</result>
+		</action>
+	</package>
+
+	<package name="cpFee" extends="struts-default" namespace="">
+		<action name="CalcFee" class="com.infly.carparking.action.CalcFeeAction">
+			<result name="success">/odisplay.jsp</result>
+			<result name="error">/odisplay.jsp</result>
+		</action>
+	</package>
+	<package name="cpaParam" extends="struts-default" namespace="">
+		<action name="CpaParamSet" class="com.infly.carparking.action.CpaParamSetAction">
+			<result name="success">/amngcpa.jsp</result>
+		</action>
+	</package>
+	<package name="cpaAdmin" extends="struts-default" namespace="">
+		<action name="AddAdmin" class="com.infly.carparking.action.AddAdminAction">
+			<result name="success">/aincadm.jsp</result>
+		</action>
+	</package>
+	<package name="userInfo" extends="struts-default" namespace="">
+		<action name="UserReg" class="com.infly.carparking.action.UserRegistAction">
+			<result name="success">/uinfo.jsp</result>
+		</action>
+	</package>
+	<package name="userCharge" extends="struts-default" namespace="">
+		<action name="Recharge" class="com.infly.carparking.action.RechargeAction">
+			<result name="success">/orecharge.jsp</result>
+		</action>
+	</package>
+	<package name="totalAction" extends="struts-default" namespace="">
+		<action name="DelAdmin" class="com.infly.carparking.action.DeleteAdminAction">
+			<result name="success">/amngcpa.jsp</result>
+			<result name="error">/invalid.jsp</result>
+		</action>
+		<action name="ShowCeb" class="com.infly.carparking.action.ShowCebAction">
+			<result name="success">/acebrecord.jsp</result>
+			<result name="error">/invalid.jsp</result>
+		</action>
+		<action name="ShowOneCeb" class="com.infly.carparking.action.ShowOneCpaAction">
+			<result name="success">/aattach.jsp</result>
+			<result name="error">/invalid.jsp</result>
+		</action>
+		<action name="ShowAdmRecord" class="com.infly.carparking.action.ShowAdmRecordAction">
+			<result name="success">/aworklog.jsp</result>
+			<result name="error">/invalid.jsp</result>
+		</action>
+		<action name="ShowRecRecord" class="com.infly.carparking.action.ShowReRecordAction">
+			<result name="success">/arechlog.jsp</result>
+			<result name="error">/invalid.jsp</result>
+		</action>
+		<action name="ShowCash" class="com.infly.carparking.action.ShowCashAction">
+			<result name="success">/acashlog.jsp</result>
+		</action>
+		<action name="ShowUserRech" class="com.infly.carparking.action.ShowUserRecAction">
+			<result name="success">/ubrch.jsp</result>
+		</action>
+		<action name="ShowMyCpa" class="com.infly.carparking.action.ShowMyRecord">
+			<result name="success">/ubrcd.jsp</result>
+		</action>
+		<action name="ShowSn" class="com.infly.carparking.action.ShowSpNoAction">
+			<result name="success">/usurpn.jsp</result>
+		</action>
+		<action name="ShowNews" class="com.infly.carparking.action.ShowNewsAction">
+			<result name="success">/admlog.jsp</result>
+		</action>
+		<action name="PublishNews" class="com.infly.carparking.action.PublishNewsAction">
+			<result name="success">/apubnew.jsp</result>
+		</action>
+		<action name="Newfw" class="com.infly.carparking.action.NewsForwardAction">
+			<result name="success">/news.jsp</result>
+		</action>
+	</package>
+</struts>

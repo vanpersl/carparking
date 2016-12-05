@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.infly.carparking.dao.entity">
+	<class name="UserCardBean" table="user_card">
+		<id name="id" type="int">
+			<generator class="native" />
+		</id>
+		<property name="userCardNo" column="user_Card_No" />
+		<property name="userCardDiscount" column="user_Card_Discount" />
+		<property name="userCardBalance" column="user_Card_Balance" />
+		<property name="userCardCost" column="user_Card_Cost" />
+		<property name="userCardHt" column="user_Card_Ht" />
+		<property name="userCardStatus" column="user_Card_Status" />
+	</class>
+</hibernate-mapping>

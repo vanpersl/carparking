@@ -1,0 +1,25 @@
+body {
+	background: #C1FFC1
+	text-align: center;
+	color: #9F35FF;
+	font-family: arial, verdana, sans-serif;
+}
+input {
+	background-color: #E0FFFF;
+	}
+#first {
+	margin-right: auto;
+	margin-left: auto;
+	width: 400px;
+}
+#in {
+	width: 130px;
+	height: 50px;
+	}
+#tab1 {
+	border-collapse:collapse;
+}
+#tab1 td {
+	color: #912CEE;
+	font-size: 16px;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cp.data.bean">
+  <class name="UserInfoBean" table="user_info">
+  	<id name="id" type="int">
+  		<generator class="native"/>
+  	</id>
+  	<property name="userInfoName" column="user_Info_Name"/>
+  	<property name="userInfoPassword" column="user_Info_Password"/>
+  	<property name="userInfoSex" column="user_Info_Sex"/>
+  	<property name="userInfoTel" column="user_Info_Tel"/>
+  	<property name="userInfoAddress" column="user_Info_Address"/>
+  	<property name="userInfoCarno" column="user_Info_Carno"/>
+  	<property name="userInfoNo" column="user_Info_No"/>
+  </class>
+</hibernate-mapping>

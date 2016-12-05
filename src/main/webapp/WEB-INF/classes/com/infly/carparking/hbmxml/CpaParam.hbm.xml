@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cp.data.bean">
+  <class name="CpaParamBean" table="cpa_param">
+  	<id name="id" type="int">
+  		<generator class="native"/>
+    </id>
+    <property name="cpaParamName" column="cpa_Param_Name"/>
+    <property name="cpaParamType" column="cpa_Param_Type"/>
+    <property name="cpaParamPcn" column="cpa_Param_Pcn"/>
+    <property name="cpaParamAddress" column="cpa_Param_Address"/>
+    <property name="cpaParamTel" column="cpa_Param_Tel"/>
+    <property name="cpaParamMaxfeeBig" column="cpa_Param_MaxfeeBig"/>
+    <property name="cpaParamOneBig" column="cpa_Param_OneBig"/>
+    <property name="cpaParamOverBig" column="cpa_Param_OverBig"/>
+    <property name="cpaParamMaxfeeSmall" column="cpa_Param_MaxfeeSmall"/>
+    <property name="cpaParamOneSmall" column="cpa_Param_OneSmall"/>
+    <property name="cpaParamOverSmall" column="cpa_Param_OverSmall"/>
+  </class>
+</hibernate-mapping>

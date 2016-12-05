@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.infly.carparking.dao.entity">
+	<class name="CarDataBean" table="car_data">
+		<id name="id" type="int">
+			<generator class="native" />
+		</id>
+		<property name="carDataNo" column="car_Data_No" />
+		<property name="carDataType" column="car_Data_Type" />
+		<property name="carDataSeries" column="car_Data_Series" />
+		<property name="carDataColor" column="car_Data_Color" />
+		<property name="carDataOwner" column="car_Data_Owner" />
+	</class>
+</hibernate-mapping>

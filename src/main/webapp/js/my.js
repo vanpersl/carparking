@@ -1,0 +1,3 @@
+function myss(){
+	alert("hello");
+}

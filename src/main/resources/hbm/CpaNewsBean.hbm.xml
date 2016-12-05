@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.infly.carparking.dao.entity">
+  <class name="CpaNewsBean" table="cpa_news">
+  		<id name="id" type="int">
+			<generator class="native" />
+		</id>
+		<property name="title" column="title" />
+		<property name="content" column="content" />
+		<property name="date" column="date" />
+		<property name="atatach" column="atatach" />
+  </class>
+</hibernate-mapping>

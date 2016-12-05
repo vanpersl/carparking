@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.infly.carparking.dao.entity">
+  <class name="CardRechargeBean" table="card_recharge">
+  	<id name="id" type="int">
+  		<generator class="native"/>
+  	</id>
+  	<property name="cardRechargeNo" column="card_Recharge_No"/>
+  	<property name="cardRechargeNum" column="card_Recharge_Num"/>
+  	<property name="cardRechargeOpt" column="card_Recharge_Opt"/>
+  	<property name="cardRechargeTime" column="card_Recharge_Time"/>
+  </class>
+</hibernate-mapping>

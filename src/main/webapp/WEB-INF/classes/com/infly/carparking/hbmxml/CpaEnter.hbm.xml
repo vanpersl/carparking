@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cp.data.bean">
+	<class name="CpaEnterBean" table="cpa_enter">
+		<id name="id" type="int">
+			<generator class="native" />
+		</id>
+		<property name="cpaEnterTime" column="cpa_Enter_Time" />
+		<property name="cpaEnterCarno" column="cpa_Enter_Carno" />
+		<property name="cpaEnterBt" column="cpa_Enter_Bt" />
+		<property name="cpaEnterEn" column="cpa_Enter_En" />
+		<property name="cpaEnterStatus" column="cpa_Enter_Status" />
+		<property name="cpaEnterOpt" column="cpa_Enter_Opt" />
+		<property name="cpaEnterCarbz" column="cpa_Enter_Carbz" />
+		<property name="cpaEnterType" column="cpa_Enter_Type" />
+		<property name="cpaEnterCpaname" column="cpa_Enter_Cpaname" />
+	</class>
+</hibernate-mapping>

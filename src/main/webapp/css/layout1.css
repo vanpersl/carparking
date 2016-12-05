@@ -1,0 +1,53 @@
+body {
+	font-family: Verdana;
+	font-size: 14px;
+	margin: 0;
+}
+
+#container {
+	margin: 0 auto;
+	width: 100%;
+}
+
+#header {
+	height: 100px;
+	background: #235;
+	margin-bottom: 1px;
+}
+
+#menu {
+	height: 30px;
+	background: #693;
+	margin-bottom: 1px;
+}
+
+#mainContent {
+	height: 650px;
+	margin-bottom: 1px;
+}
+
+#sidebar {
+	float: left;
+	width: 200px;
+	height: 650px;
+	background: #357;
+}
+
+#sidebar2 {
+	float: right;
+	width: 200px;
+	height: 650px;
+	background: #430;
+}
+
+#content {
+	margin: 0 205px !important;
+	margin: 0 202px;
+	height: 650px;
+	background: #820;
+}
+
+#footer {
+	height: 60px;
+	background: #9c6;
+}

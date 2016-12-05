@@ -1,0 +1,24 @@
+body {
+	background: #C1FFC1
+	text-align: center;
+	color: #9F35FF;
+	font-family: arial, verdana, sans-serif;
+}
+#first {
+	margin-right: auto;
+	margin-left: auto;
+	width: 600px;
+}
+#inputsty{
+	width:100px;
+	height:16;
+	font-style:italic;
+	color:blue;
+	background-color: green;
+}
+#tab1 {
+	border-collapse:collapse;
+}
+#tab1 td { 
+	font-size: 14px;
+}

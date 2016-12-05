@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.infly.carparking.dao.entity">
+	<class name="CpaRecordBean" table="cpa_record">
+		<id name="id" type="int">
+			<generator class="native" />
+		</id>
+		<property name="cpaRecordCpn" column="cpa_Record_Cpn" />
+		<property name="cpaRecordEt" column="cpa_Record_Et" />
+		<property name="cpaRecordBt" column="cpa_Record_Bt" />
+		<property name="cpaRecordOt" column="cpa_Record_Ot" />
+		<property name="cpaRecordPt" column="cpa_Record_Pt" />
+		<property name="cpaRecordFee" column="cpa_Record_Fee" />
+		<property name="cpaRecordCardno" column="cpa_Record_Cardno" />
+		<property name="cpaRecordPft" column="cpa_Record_Pft" />
+		<property name="cpaRecordCarno" column="cpa_Record_Carno" />
+		<property name="cpaRecordStatus" column="cpa_Record_Status" />
+		<property name="cpaRecordOpte" column="cpa_Record_Opte" />
+		<property name="cpaRecordOpto" column="cpa_Record_Opto" />
+		<property name="cpaRecordCpaname" column="cpa_Record_Cpaname" />
+		<property name="cpaRecordType" column="cpa_Record_Type" />
+		<property name="cpaRecordCarbz" column="cpa_Record_Carbz" />
+	</class>
+</hibernate-mapping>
