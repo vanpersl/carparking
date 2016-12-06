@@ -45,6 +45,11 @@ jQuery(document).ready(function(){
 			enable_navigation_keys: true,   
  			progressbar: false
 		});
+		
+		$("#refreshVerificode").click(function(){
+			//点击更新验证码
+			$("#yanzheng").attr("src","verifycode.do");
+		});
 	});				  
 					 
 });
@@ -82,16 +87,22 @@ jQuery(document).ready(function(){
 		<div id="content">
         	<div id="main">               
                 <h2 class="title_pattern uppercase"><span>用户登录</span></h2>
-                <s:form action="UserLogin.action">
+                <form name="UserLogin" method="post" action="UserLogin.do">
 					<table align="center" width="300">			               
 			                <tr>
 			                    <td width="30%">用户名：</td>
-			                    <td width="70%"><input type="text" name="name" size="19" maxlength="12" style="width:140px;height:16"/></td>
+			                    <td width="70%"><input type="text" name="name" size="19" maxlength="12" style="width:140px;height:40"/></td>
 			                </tr>
 			                <tr><td>&nbsp;</td></tr>
 			                <tr>
 			                    <td width="30%">密码：</td>
-			                    <td width="70%"><input type="password" name="password" size="19" maxlength="12" style="width:140px;height:16"/></td>
+			                    <td width="70%"><input type="password" name="password" size="19" maxlength="12" style="width:140px;height:40"/></td>
+			                </tr>
+			                <tr>
+			                    <td width="30%">验证码：</td>
+			                    <td width="70%"><input type="verificode" name="verificode" size="19" maxlength="4" style="width:140px;height:40"/>
+   									<span><img width="70" height="30" style="cursor:pointer;" alt="点击切换" src="verifycode.do" id="refreshVerificode"/></span>
+   								</td>
 			                </tr>
 			                <tr><td>&nbsp;</td></tr>			                
 			                <tr align="center">
@@ -101,7 +112,7 @@ jQuery(document).ready(function(){
 			                    </td>
 			                </tr>
 			            </table>
-				</s:form>                         
+			   	</form>
             	<div class="clear"></div>
             </div>
 		</div>
